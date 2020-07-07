@@ -18,8 +18,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .tripadvisor {
-  grid-column: 1/2;
-  grid-row: 4/5;
   background-color: tomato;
+  grid-area: tripadvisor;
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    grid-column: col-start / 4;
+  }
 }
 </style>

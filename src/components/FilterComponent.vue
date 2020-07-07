@@ -34,8 +34,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .filter {
-  grid-column: 1/4;
   background-color: mediumslateblue;
+  display: none;
+  grid-area: filter;
+  @media (min-width: 768px) {
+    display: block;
+    grid-column: col-start / 10;
+  }
   &__header {
     display: flex;
     justify-content: space-between;

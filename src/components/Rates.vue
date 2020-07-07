@@ -39,9 +39,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .rate-card {
-  grid-column: 3/5;
-  grid-row: 4/5;
   background-color: rosybrown;
+  grid-area: rate;
+  @media (min-width: 768px) {
+    grid-column: col-start 4 / 13;
+  }
   &__block {
     background-color: white;
     display: flex;

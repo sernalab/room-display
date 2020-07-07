@@ -15,8 +15,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .nearby {
-  grid-column: 1/5;
-  grid-row: 5/6;
   background-color: palegreen;
+  grid-area: nearby;
+  @media (min-width: 768px) {
+    grid-column: col-start / 13;
+  }
 }
 </style>

@@ -18,8 +18,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .info-message {
-  grid-column: 1/5;
-  grid-row: 2/3;
   background-color: peru;
+  grid-area: info;
+  @media (min-width: 768px) {
+    grid-column: col-start / 13;
+  }
 }
 </style>

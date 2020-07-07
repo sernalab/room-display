@@ -30,9 +30,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .hotel-card {
-  grid-column: 1/2;
-  grid-row: 3/4;
   background-color: mediumaquamarine;
+  grid-area: hotel;
+  @media (min-width: 768px) {
+    grid-column: col-start / span 3;
+  }
   &__img {
     img{
       height: 10rem;

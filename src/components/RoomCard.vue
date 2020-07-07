@@ -51,9 +51,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .room-card {
-  grid-column: 3/5;
-  grid-row: 3/4;
   background-color: cornflowerblue;
+  grid-area: room;
+  @media (min-width: 768px) {
+    grid-column: col-start 4 / 13;
+  }
   &__block--img {
     float: left;
     img {

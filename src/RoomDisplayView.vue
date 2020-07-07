@@ -43,11 +43,23 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 1000px;
-  margin: 30px auto;
   display: grid;
-  /* grid-template-columns: repeat(4, 25%); */
-  grid-template-columns: 1fr 50px 1fr 1fr;
-  grid-template-rows: repeat(3, 25%);
+  grid-template-areas: 
+  "hotel"
+  "info"
+  "room"
+  "rate"
+  "nearby";
 }
+@media (min-width: 768px) {
+    #app {
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-template-areas: 
+      "filter filter currency"
+      "info info info"
+      "hotel room room"
+      "tripadvisor rate rate"
+      "nearby nearby nearby";
+    }
+  }
 </style>
