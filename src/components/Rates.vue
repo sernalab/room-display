@@ -1,21 +1,22 @@
 <template>
-  <div class="container">
-    <div class="hotel-card">
-      <div class="hotel-card__img">
-        <h1>Rates</h1>
-      </div>
-      <div class="hotel-card__img">
-        <span>Title Hotel</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>Discount labels</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>Adress</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>777777777</span>
-      </div>
+  <div class="rate-card">
+    <div class="rate-card__img">
+      <h3>Title rate</h3>
+    </div>
+    <div class="rate-card__label">
+      <span>NON refound</span>
+    </div>
+    <div class="rate-card__conditions">
+      <span>See conditions</span>
+    </div>
+    <div class="rate-card__discount">
+      <span>Discount</span>
+    </div>
+    <div class="rate-card__price">
+      <span>7777$</span>
+    </div>
+    <div class="rate-card__select">
+      <button>Select ></button>
     </div>
   </div>
 </template>
@@ -27,19 +28,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+.rate-card {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  background-color: rosybrown;
+}
+
 h3 {
   margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>

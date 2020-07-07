@@ -1,21 +1,11 @@
 <template>
-  <div class="container">
-    <div class="hotel-card">
-      <div class="hotel-card__img">
-        <h1>Currency</h1>
-      </div>
-      <div class="hotel-card__img">
-        <span>Title Hotel</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>Discount labels</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>Adress</span>
-      </div>
-      <div class="hotel-card__img">
-        <span>777777777</span>
-      </div>
+  <div class="currency">
+    <div class="currency__price">
+      <p>See prices in</p>
+      <select name="currency" id="currency">
+        <option value="eur">EUR</option>
+        <option value="dolar">DOLAR</option>
+      </select>
     </div>
   </div>
 </template>
@@ -27,19 +17,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style scoped lang="scss">
+.currency {
+  grid-column: 4/5;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  background-color: limegreen;
+  &__price {
+    display: flex;
+    align-items: center;
+  }
 }
 </style>

@@ -4,6 +4,7 @@
     <Currency />
     <InfoMessage />
     <HotelCard />
+    <Tripadvisor />
     <RoomCard />
     <Rates />
     <Nearby />
@@ -18,6 +19,7 @@ import Currency from './components/Currency.vue'
 import Rates from './components/Rates.vue'
 import Nearby from './components/Nearby.vue'
 import InfoMessage from './components/InfoMessage.vue'
+import Tripadvisor from './components/Tripadvisor.vue'
 
 export default {
   name: 'App',
@@ -28,7 +30,8 @@ export default {
     RoomCard,
     Rates,
     Nearby,
-    InfoMessage
+    InfoMessage,
+    Tripadvisor
   }
 }
 </script>
@@ -40,7 +43,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 1000px;
+  margin: 30px auto;
   display: grid;
+  /* grid-template-columns: repeat(4, 25%); */
+  grid-template-columns: 1fr 50px 1fr 1fr;
+  grid-template-rows: repeat(3, 25%);
 }
 </style>

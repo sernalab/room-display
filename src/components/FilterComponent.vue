@@ -1,20 +1,25 @@
 <template>
-  <div class="container">
-    <div class="hotel-card">
-      <div class="hotel-card__img">
-        <h1>FilterComponent</h1>
+  <div class="filter">
+    <div class="filter__header">
+      <div class="filter__title">
+        <h1>FilterRates</h1>
       </div>
-      <div class="hotel-card__img">
-        <span>Title Hotel</span>
+      <div class="filter__clear">
+        <a href="#">Clear all filters</a>
       </div>
-      <div class="hotel-card__img">
-        <span>Discount labels</span>
+    </div>
+    <div class="filter__group">
+      <div class="filter__group--item">
+        <span>Member only</span>
       </div>
-      <div class="hotel-card__img">
-        <span>Adress</span>
+      <div class="filter__group--item">
+        <span>Free Cancellation</span>
       </div>
-      <div class="hotel-card__img">
-        <span>777777777</span>
+      <div class="filter__group--item">
+        <span>Discounted</span>
+      </div>
+      <div class="filter__group--item">
+        <span>Points</span>
       </div>
     </div>
   </div>
@@ -27,17 +32,23 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
+<style scoped lang="scss">
+.filter {
+  grid-column: 1/4;
+  background-color: mediumslateblue;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__group {
+    display: flex;
+    flex-direction: row;
+    &--item {
+      border: 1px solid tomato;
+      margin: 0 10px;
+    }
+  }
 }
 a {
   color: #42b983;

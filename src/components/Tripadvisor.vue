@@ -1,19 +1,10 @@
 <template>
-  <div class="room-card">
-    <div class="room-card__img">
-      <h1>RoomCard</h1>
+  <div class="tripadvisor">
+    <div class="hotel-card__img">
+      <h1>Tripadvisor</h1>
     </div>
-    <div class="room-card__title">
-      <span>Title room</span>
-    </div>
-    <div class="room-card__description">
+    <div class="hotel-card__description">
       <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet fugit ab saepe modi voluptatibus numquam recusandae, eum libero. Autem quisquam, nisi mollitia odio voluptatem eligendi natus qui deserunt reiciendis officia!</span>
-    </div>
-    <div class="room-card__guests">
-      <span>Max Guests</span>
-    </div>
-    <div class="room-card__img-size">
-      <span>20m</span>
     </div>
   </div>
 </template>
@@ -26,9 +17,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.room-card {
-  grid-column: 3/5;
-  grid-row: 3/4;
-  background-color: cornflowerblue;
+.tripadvisor {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  background-color: tomato;
 }
 </style>
